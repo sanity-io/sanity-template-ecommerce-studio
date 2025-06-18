@@ -39,6 +39,17 @@ npm run dev
 
 Your Sanity Studio should now be running on [http://localhost:3333](http://localhost:3333).
 
+### Import sample data
+
+To get started quickly, you can import the included sample data:
+
+```shell
+cd studio
+npx sanity dataset import sample-data.ndjson
+```
+
+This will populate your dataset with example products, collections, and content to help you explore the studio's capabilities.
+
 ## Deployment
 
 ### Deploy to Sanity
@@ -59,13 +70,13 @@ You'll need to:
 
 ## Next steps
 
-- [Follow the Shopify integration guide](https://www.sanity.io/docs/sanity-connect-for-shopify) 
+- [Follow the Shopify integration guide](https://www.sanity.io/docs/sanity-connect-for-shopify)
 - [Learn how to display content in Liquid](https://www.sanity.io/docs/displaying-sanity-content-in-liquid)
 - [Invite collaborators to your studio](https://www.sanity.io/docs/access-control)
 
 ## Resources
 
-- [Read "Getting started with Sanity"](https://www.sanity.io/docs/getting-started?utm_source=github.com&utm_medium=referral&utm_campaign=template) 
+- [Read "Getting started with Sanity"](https://www.sanity.io/docs/getting-started?utm_source=github.com&utm_medium=referral&utm_campaign=template)
 - [Check out the docs for Sanity Studio](https://www.sanity.io/docs/sanity-studio?utm_source=github.com&utm_medium=referral&utm_campaign=template)
 - [Join the community Slack](https://slack.sanity.io/?utm_source=github.com&utm_medium=referral&utm_campaign=template)
 - [Explore Sanity Learn](https://www.sanity.io/learn?utm_source=github.com&utm_medium=referral&utm_campaign=template)
