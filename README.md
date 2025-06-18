@@ -5,12 +5,10 @@ This is a powerful ecommerce content management system built with [Sanity Studio
 ## Features
 
 - **Sanity Studio** for content management
-- **Shopify Integration** for product and inventory management  
+- **Shopify Integration** for product and inventory management
 - **TypeScript** for type safety
-- **Real-time Preview** for live content editing
 - **Product Management** with variants and collections
 - **Inventory Tracking** with stock levels
-- **Asset Management** for product images and media
 - **Content Modeling** for flexible ecommerce content
 
 ## Demo
