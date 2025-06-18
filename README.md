@@ -39,16 +39,40 @@ npm run dev
 
 Your Sanity Studio should now be running on [http://localhost:3333](http://localhost:3333).
 
-### Import sample data
+## Choose your setup path
 
-To get started quickly, you can import the included sample data:
+### Option 1: Quick start with sample data (recommended for exploration)
+
+To get started quickly and explore the studio's capabilities, import the included sample data:
 
 ```shell
 cd studio
 npx sanity dataset import sample-data.ndjson
 ```
 
-This will populate your dataset with example products, collections, and content to help you explore the studio's capabilities.
+This will populate your dataset with example products, collections, and content. Perfect for:
+
+- Exploring the studio interface and features
+- Understanding the content structure
+- Testing workflows before connecting to Shopify
+- Demos and development
+
+**Note**: Sample data is static and won't sync with a live Shopify store.
+
+### Option 2: Connect to your Shopify store (for production use)
+
+To connect this studio to your live Shopify store for real-time product sync:
+
+1. Install [Sanity Connect](https://apps.shopify.com/sanity-connect) to your Shopify store
+2. [Enable sync to your Shopify store](https://www.sanity.io/docs/sanity-connect-for-shopify)
+3. Update `SHOPIFY_STORE_ID` in `studio/constants.ts` to reflect your Shopify domain
+
+This setup enables:
+
+- Real-time product and inventory sync
+- Bi-directional updates between Sanity and Shopify
+- Live product data in your content workflows
+- Production-ready ecommerce content management
 
 ## Deployment
 
@@ -59,14 +83,6 @@ npx sanity deploy
 ```
 
 Your studio will be available at `https://yourprojectname.sanity.studio`.
-
-### Environment Setup
-
-You'll need to:
-
-1. Install [Sanity Connect](https://apps.shopify.com/sanity-connect) to your Shopify store
-2. [Enable sync to your Shopify store](https://www.sanity.io/docs/sanity-connect-for-shopify)
-3. Update `SHOPIFY_STORE_ID` in `studio/constants.ts` to reflect your Shopify domain
 
 ## Next steps
 
