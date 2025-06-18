@@ -6,7 +6,7 @@ const dataset = process.env.SANITY_STUDIO_DATASET || 'ecommerce'
 export default defineCliConfig({
   api: {
     projectId,
-    dataset
+    dataset,
   },
   /**
    * Enable auto-updates for studios.
