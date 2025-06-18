@@ -1,54 +1,71 @@
-# Sanity Studio for Shopify Storefronts
+# A Shopify Ecommerce Studio with a Native Authoring Experience
 
-## About
-
-This Sanity Studio is configured for Shopify storefronts that use the official [Sanity Connect app](https://apps.shopify.com/sanity-connect) to sync content from Sanity to Shopify.
-
-It contains examples of customizing your [structure](https://www.sanity.io/docs/structure-builder), [document actions](https://www.sanity.io/docs/document-actions) and [input components](https://www.sanity.io/docs/custom-input-widgets).
-
-If you're building a headless storefront, you may want to check out our [starter Studio for headless storefronts](https://github.com/sanity-io/sanity-shopify-studio), which has a richer content model.
+This is a powerful ecommerce content management system built with [Sanity Studio](https://www.sanity.io/studio) and integrated with Shopify for seamless product and content management.
 
 ## Features
 
-This studio comes preconfigured with Shopify-friendly content schema types and a whole host of customizations to make managing Shopify data in your Sanity studio easier. It also comes bundled with our [Shopify asset plugin](https://github.com/sanity-io/sanity-plugin-shopify-assets), which enables you to choose assets from your Shopify store in your Sanity Studio.
+- **Sanity Studio** for content management
+- **Shopify Integration** for product and inventory management  
+- **TypeScript** for type safety
+- **Real-time Preview** for live content editing
+- **Product Management** with variants and collections
+- **Inventory Tracking** with stock levels
+- **Asset Management** for product images and media
+- **Content Modeling** for flexible ecommerce content
 
-Once you have sync'd content to your Shopify store, you can follow our documentation on how to [display content in Liquid](https://www.sanity.io/docs/displaying-sanity-content-in-liquid).
+## Demo
 
-## Setup
+This template comes pre-configured with:
 
-If you're reading this on GitHub, chances are you haven't initialized the studio locally yet. To do so, run the following shell command:
+- Product schema types optimized for Shopify
+- Collection management interfaces
+- Inventory tracking components
+- Custom document actions for Shopify sync
+- Asset plugin for managing Shopify media
 
-```sh
-# run a one-off initializing script:
-npx @sanity/cli init --template shopify-online-storefront
+## Getting started
+
+### Initialize template
+
+```shell
+npm create sanity@latest -- --template sanity-io/sanity-template-ecommerce-studio
 ```
 
-Make sure to run the tagged release! (`@sanity/cli`)
+### Run locally
 
-You'll need install [Sanity Connect](https://apps.shopify.com/sanity-connect) to your Shopify store, and [enable the sync to your Shopify store](https://www.sanity.io/docs/sanity-connect-for-shopify#1bcb10c66c21). to update `SHOPIFY_STORE_ID` in `constants.ts` to reflect your Shopify domain.
-
-## Local Development
-
-### Starting development server
-
-```sh
+```shell
 npm run dev
 ```
 
-### Deploying the studio
+Your Sanity Studio should now be running on [http://localhost:3333](http://localhost:3333).
 
-```sh
-npm run deploy
+## Deployment
+
+### Deploy to Sanity
+
+```shell
+npx sanity deploy
 ```
 
-### Upgrading Sanity Studio
+Your studio will be available at `https://yourprojectname.sanity.studio`.
 
-```sh
-npm run upgrade
-```
+### Environment Setup
 
-If you have the [Sanity CLI](https://www.sanity.io/docs/cli) installed, you can also run this with `sanity start|deploy|upgrade`. It comes with additional useful functionality.
+You'll need to:
 
-## License
+1. Install [Sanity Connect](https://apps.shopify.com/sanity-connect) to your Shopify store
+2. [Enable sync to your Shopify store](https://www.sanity.io/docs/sanity-connect-for-shopify)
+3. Update `SHOPIFY_STORE_ID` in `studio/constants.ts` to reflect your Shopify domain
 
-This repository is published under the [MIT](license) license.
+## Next steps
+
+- [Follow the Shopify integration guide](https://www.sanity.io/docs/sanity-connect-for-shopify) 
+- [Learn how to display content in Liquid](https://www.sanity.io/docs/displaying-sanity-content-in-liquid)
+- [Invite collaborators to your studio](https://www.sanity.io/docs/access-control)
+
+## Resources
+
+- [Read "Getting started with Sanity"](https://www.sanity.io/docs/getting-started?utm_source=github.com&utm_medium=referral&utm_campaign=template) 
+- [Check out the docs for Sanity Studio](https://www.sanity.io/docs/sanity-studio?utm_source=github.com&utm_medium=referral&utm_campaign=template)
+- [Join the community Slack](https://slack.sanity.io/?utm_source=github.com&utm_medium=referral&utm_campaign=template)
+- [Explore Sanity Learn](https://www.sanity.io/learn?utm_source=github.com&utm_medium=referral&utm_campaign=template)

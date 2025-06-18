@@ -1,44 +1,40 @@
 {
-  "name": "function-recipe-demos",
+  "name": "sanity-template-ecommerce-studio",
+  "description": "Sanity + Shopify: A Powerful Ecommerce Content Management System",
   "private": true,
   "version": "1.0.0",
-  "main": "package.json",
-  "license": "UNLICENSED",
   "scripts": {
-    "dev": "sanity dev",
-    "start": "sanity start",
-    "build": "sanity build",
-    "deploy": "sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
+    "dev": "sanity dev --dir=studio",
+    "dev:studio": "sanity dev --dir=studio",
+    "build": "sanity build --dir=studio",
+    "deploy": "sanity deploy --dir=studio",
+    "deploy-graphql": "sanity graphql deploy --dir=studio",
+    "schema:deploy": "sanity schema deploy --dir=studio",
+    "typegen": "sanity typegen generate --dir=studio",
+    "validate": "sanity-template-validate"
   },
   "keywords": [
-    "sanity"
+    "sanity",
+    "shopify",
+    "ecommerce",
+    "headless-cms",
+    "content-management"
   ],
-  "dependencies": {
-    "@portabletext/toolkit": "^2.0.1",
-    "@sanity/icons": "^2.11.0",
-    "@sanity/ui": "^2.0.0",
-    "@sanity/vision": "^3.93.0",
-    "@types/lodash.get": "^4.4.7",
-    "lodash.get": "^4.4.2",
-    "pluralize-esm": "^9.0.4",
-    "react": "^19.1",
-    "react-dom": "^19.1",
-    "sanity": "^3.93.0",
-    "sanity-plugin-shopify-assets": "^1.1.0",
-    "styled-components": "^6.1.18"
-  },
+  "workspaces": [
+    "studio"
+  ],
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^5.0.2",
-    "@types/react": "^19.1",
-    "eslint": "^9.28",
-    "prettier": "^3.5",
-    "typescript": "^5.8"
+    "@sanity/template-validator": "^2.4.3",
+    "npm-run-all": "^4.1.5"
   },
   "prettier": {
     "semi": false,
     "printWidth": 100,
     "bracketSpacing": false,
     "singleQuote": true
+  },
+  "dependencies": {
+    "react-is": "^19.1.0",
+    "styled-components": "^6.1.19"
   }
 }
