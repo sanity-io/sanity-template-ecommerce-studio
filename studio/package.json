@@ -17,26 +17,26 @@
     "sanity"
   ],
   "dependencies": {
-    "@portabletext/toolkit": "^2.0.17",
-    "@sanity/icons": "^3.7.0",
-    "@sanity/ui": "^2.16.2",
-    "@sanity/vision": "^3.93.0",
+    "@portabletext/toolkit": "^2.0.18",
+    "@sanity/icons": "^3.7.4",
+    "@sanity/ui": "^2.16.22",
+    "@sanity/vision": "^3.99.0",
     "@types/lodash.get": "^4.4.9",
     "lodash.get": "^4.4.2",
     "pluralize-esm": "^9.0.5",
-    "react": "19.2.1",
-    "react-dom": "19.2.1",
-    "sanity": "^3.93.0",
-    "sanity-plugin-shopify-assets": "^1.2.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "sanity": "^3.99.0",
+    "sanity-plugin-shopify-assets": "^1.2.2",
     "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^5.0.2",
-    "@sanity/types": "^3.93.0",
-    "@types/react": "^19.1",
-    "eslint": "^9.29",
-    "prettier": "^3.5",
-    "typescript": "^5.8"
+    "@sanity/types": "^3.99.0",
+    "@types/react": "^19.2.7",
+    "eslint": "^9.39.2",
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3"
   },
   "prettier": {
     "semi": false,
