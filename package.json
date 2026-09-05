@@ -24,7 +24,7 @@
     "studio"
   ],
   "devDependencies": {
-    "@sanity/template-validator": "^2.4.3",
+    "@sanity/template-validator": "^2.4.6",
     "npm-run-all": "^4.1.5"
   },
   "prettier": {
@@ -34,7 +34,7 @@
     "singleQuote": true
   },
   "dependencies": {
-    "react-is": "^19.1.0",
-    "styled-components": "^6.1.19"
+    "react-is": "^19.2.8",
+    "styled-components": "^6.5.3"
   }
 }
